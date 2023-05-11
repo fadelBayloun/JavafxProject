@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<HBox xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.guiproject.controllers.LoginController">
+   <children>
+      <VBox alignment="CENTER" style="-fx-background-color: #2d3447;" HBox.hgrow="ALWAYS">
+         <children>
+            <Label maxWidth="400.0" minWidth="400.0" prefHeight="388.0" prefWidth="370.0" text="Library Managment System" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="40.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="386.0" fitWidth="217.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../images/stack-of-books.png" />
+               </image>
+            </ImageView>
+         </children>
+         <padding>
+            <Insets bottom="100.0" left="20.0" right="20.0" />
+         </padding>
+      </VBox>
+      <HBox prefWidth="272.0" HBox.hgrow="ALWAYS">
+         <children>
+            <VBox alignment="CENTER" minWidth="400.0" spacing="30.0" HBox.hgrow="ALWAYS">
+               <children>
+                  <ImageView fitHeight="126.0" fitWidth="78.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../images/multiple-users-silhouette%20(1).png" />
+                     </image>
+                  </ImageView>
+                  <Label text="User Login" textFill="#2d3447">
+                     <font>
+                        <Font name="System Bold" size="30.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="username" maxWidth="300.0" prefHeight="32.0" prefWidth="275.0" promptText="Username" style="-fx-background-color: transparent; -fx-border-color: #2d3447; -fx-border-width: 0px 0px 2px 0px;">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </TextField>
+                  <PasswordField fx:id="password" maxWidth="300.0" prefHeight="34.0" prefWidth="275.0" promptText="Password" style="-fx-background-color: transparent; -fx-border-color: #2d3447; -fx-border-width: 0px 0px 2px 0px;">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </PasswordField>
+                  <HBox alignment="CENTER" spacing="10.0">
+                     <children>
+                        <Button fx:id="login" mnemonicParsing="false" onAction="#login" prefHeight="49.0" prefWidth="102.0" style="-fx-background-color: #2196f3;" text="LOGIN" textFill="WHITE">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="clear" mnemonicParsing="false" onAction="#clear" prefHeight="49.0" prefWidth="102.0" style="-fx-background-color: #2d3447;" text="CLEAR" textFill="WHITE">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <Label fx:id="test" prefHeight="41.0" prefWidth="249.0" textAlignment="CENTER" textFill="RED">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</HBox>

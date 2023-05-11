@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.guiproject.controllers.LibraryController">
+    <left>
+        <fx:include source="menu.fxml" />
+    </left>
+   <center>
+      <HBox prefHeight="500.0" prefWidth="808.0" style="-fx-background-color: #2d3447;" BorderPane.alignment="CENTER">
+         <children>
+            <VBox prefHeight="500.0" prefWidth="713.0" style="-fx-background-color: #2d3447;">
+               <children>
+                  <Label alignment="CENTER" prefHeight="30.0" prefWidth="718.0" style="-fx-background-color: #2196f3;" text="Notifications" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <ListView fx:id="NotificationList" prefHeight="1000.0" prefWidth="714.0" />
+               </children>
+            </VBox>
+            <AnchorPane fx:id="container" prefHeight="500.0" prefWidth="0.0" style="-fx-background-color: #2d3447;" />
+         </children>
+      </HBox>
+   </center>
+</BorderPane>
